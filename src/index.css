@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    .display {
+      font-size: 5rem;
+      font-family: monospace;
+      font-weight: bold;
+      color: rgb(48, 49, 51);
+      margin-bottom: 25px;
+    }
+    .controls {
+      button {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin: 5px;
+        color: #fff;
+        min-width: 125px;
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -ms-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        &.start-btn {
+          background-color: rgba(24, 186, 73, 0.8);
+          &:hover {
+            background-color: rgba(24, 186, 73);
+          }
+        }
+        &.stop-btn {
+          background-color: rgb(228, 20, 20, 0.8);
+          &:hover {
+            background-color: rgb(228, 20, 20);
+          }
+        }
+        &.reset-btn {
+          background: rgb(205, 223, 5, 0.8);
+          &:hover {
+            background-color: rgb(205, 223, 5);
+          }
+        }
+      }
+    }
+  }
+}
